@@ -1,19 +1,18 @@
-# Jac MCP Mini-App 🔌
+# Jac MCP Mini-App 
 
 A Model Context Protocol (MCP) server and client implementation built entirely in the **Jac** programming language. 
 
 
-## 📂 Repository Contents
+## Repository Contents
 
 * `mcp_server.jac`: The FastMCP backend server. Exposes tools via `@mcp.tool()` and `@mcp.resource()` decorators.
 * `mcp_client.jac`: A simple MCP client written in Jac that connects to the server, dynamically discovers available tools, and executes them.
 * `mcp_client_architecture.md`: Detailed architectural documentation explaining the inner workings of the Jac MCP client.
 * `helpers.jac` & `ingest.jac`: Scripts used to parse and ingest Jac documentation into video memory.
-* `weather.jac`: An example/utility file ().
-* `*.mv2`: Memvid (memory video) knowledge artifacts ( `knowledge.mv2`) 
+* `*.mv2`: Memvid (memory video) knowledge artifacts ( `jac_docs.mv2`) 
 * `jaseci-docs-repo/`: The raw Jaseci documentation dataset source.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 Make sure you have the required Jaseci/Jac plugins installed in your environment, including the memory storage:
@@ -38,3 +37,4 @@ jac run mcp_client.jac
 
 ---
 *Built natively in Jac*
+
